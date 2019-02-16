@@ -2,11 +2,13 @@
   "name": "learntogether",
   "version": "1.0.0",
   "description": "Find friends to learn with.",
-  "main": "main.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "main": "main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "it works!",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" "
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/meganzhang88/LearnTogether/issues"
   },
-  "homepage": "https://github.com/meganzhang88/LearnTogether#readme"
+  "homepage": "https://github.com/meganzhang88/LearnTogether#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "lite-server": "^2.4.0"
+  }
 }
