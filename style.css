@@ -5,6 +5,16 @@ h1 {
 
 p {
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-image: -webkit-radial-gradient(0.333);
+    padding-top: 20px;
+}
+
+#back-button {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 input {
@@ -26,4 +36,7 @@ input {
  }
  form {
     padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
