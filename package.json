@@ -1,0 +1,21 @@
+{
+  "name": "learntogether",
+  "version": "1.0.0",
+  "description": "Find friends to learn with.",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meganzhang88/LearnTogether.git"
+  },
+  "author": "Meghan, Kiley, Anna, & Chiazo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meganzhang88/LearnTogether/issues"
+  },
+  "homepage": "https://github.com/meganzhang88/LearnTogether#readme"
+}
