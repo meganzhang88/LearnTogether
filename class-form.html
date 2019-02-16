@@ -14,12 +14,14 @@
                 <div>
                     <!-- tell the user Hello by calling their name form Person object-->
                     <p>Enter Your Class Information Below:</p>
+                    <div id="course-det"><p id="course-det">(Department, Course Number)</p></div>
+                    
                 </div>
                 <div class="class-form" id="class-form">
-                        <form class="class-form" id="class-form" action="#">
-                                <input class="deptabr-input" type="text" id="dept-abrv" placeholder="Enter Depart. Abbrev">
-                                <input class="coursenum-input" type="text" id="course-num" placeholder="Enter Course Number">
-                                <button type="submit" class="name-button" id="submit-class">Next ></button>
+                        <form class="class-form" id="class-form" action="map.html">
+                                <input class="deptabr-input" type="text" id="dept-abrv" placeholder="Ex: CLAS">
+                                <input class="coursenum-input" type="text" id="course-num" placeholder="Ex: 051">
+                                <button type="submit" class="submit-button" id="submit-class">Submit!</button>
                             </form>
                 </div>
                 <div class="backbutton" id="back-button">
@@ -27,7 +29,12 @@
                 </div>
             </div>
             
-            
+            <script>
+                function doSomething() {
+                    alert("Form submitted!");
+                    return false;
+                }
+            </script>
             
 
             
