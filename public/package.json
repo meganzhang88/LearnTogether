@@ -22,9 +22,14 @@
   "homepage": "https://github.com/meganzhang88/LearnTogether#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
+<<<<<<< HEAD:public/package.json
     "lite-server": "^2.4.0"
   },
   "dependencies": {
     "firebase": "^5.8.3"
+=======
+    "lite-server": "^2.4.0",
+    "typescript": "^3.3.3"
+>>>>>>> origin/anna:package.json
   }
 }
