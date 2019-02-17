@@ -28,7 +28,6 @@ var latitude = document.getElementById("latitude") as HTMLElement;
 var longitude = document.getElementById("longitude") as HTMLElement;
 var finalNextButton = document.getElementById("user-button") as HTMLElement;
 
-
 class User {
     firstName: string;
     lastName: string;
@@ -51,11 +50,10 @@ class User {
 
 finalNextButton.onclick = (event: MouseEvent) => {
     let currentUser = new User(firstName.innerText, lastName.innerText, department.innerText, parseInt(courseNumber.innerText), parseInt(latitude.innerText), parseInt(longitude.innerText));
-}
+} 
 
 let getDistance = (lat1: number, lat2: number, lng1: number, lng2: number): number => {
     let latDiff : number = Math.abs(lat1 - lat2);
     let lngDiff : number = Math.abs(lng1 - lng2);
     return Math.sqrt(latDiff + lngDiff);
 }
-
