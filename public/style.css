@@ -20,6 +20,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: inline-block;
+    text-align: center;
 }
 
 #submit-button {
@@ -27,6 +29,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: inline-block;
+    text-align: center;
 }
 
 #user-button {
@@ -35,6 +39,8 @@ p {
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
+    display: inline-block;
+    text-align: center;
 }
 
 #map {

@@ -10,13 +10,16 @@
        * element that contains the map. */
       #map {
         height: 100%;
+        border: 20px black;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
-        margin: 0;
-        padding: 0;
+        margin: 5px;
+        
+        padding-bottom: 15px;
       }
+
     </style>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
@@ -42,7 +45,8 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
-          zoom: 20
+          zoom: 20,
+          mapTypeId: google.maps.MapTypeId.SATELLITE
         });
         infoWindow = new google.maps.InfoWindow;
 
@@ -75,6 +79,8 @@
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
+
+      
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABwl2qpUZaOYOPg6Bspk2gm0qmRn2-kNM&callback=initMap">
