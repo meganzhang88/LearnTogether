@@ -53,9 +53,6 @@
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
-            document.getElementById('latlngString').innerHTML = '<p>Latitude, Longitude: </p>'
-            document.getElementById('latitude').innerHTML = '<p>'+pos.lat+'</p>'
-            document.getElementById('longitude').innerHTML = '<p>'+pos.lng+'</p>'
             infoWindow.setPosition(pos);
             infoWindow.setContent('Location found.');
             infoWindow.open(map);
