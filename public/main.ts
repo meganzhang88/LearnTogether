@@ -7,6 +7,7 @@ let longitude = document.getElementById("longitude") as HTMLInputElement;
 let finalNextButton = document.getElementById("user-button") as HTMLElement;
 let firstButton = document.getElementById("submit-name") as HTMLElement;
 
+
 class User {
     firstName: string;
     lastName: string;
@@ -30,6 +31,7 @@ firstButton.onclick = (event: MouseEvent) => {
     let currentUser = new User(firstName.value, lastName.value, department.value, parseFloat(courseNumber.value), parseInt(latitude.value), parseInt(longitude.value));
     
 };
+
 
 
 
