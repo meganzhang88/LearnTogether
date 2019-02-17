@@ -18,7 +18,8 @@ import 'firebase/firestore';
 // ...
 
 export const auth = firebase.auth();
-export const database = firebase.database();
+// export const database = firebase.database();
+
 
 var firstName = document.getElementById("fname-input") as HTMLElement;
 var lastName = document.getElementById("lname-input") as HTMLElement;
@@ -27,7 +28,8 @@ var courseNumber = document.getElementById("course-num") as HTMLInputElement;
 var latitude = document.getElementById("latitude") as HTMLElement;
 var longitude = document.getElementById("longitude") as HTMLElement;
 var finalNextButton = document.getElementById("user-button") as HTMLElement;
-
+var database = firebase.database();
+var ref = database.ref("https://learntogether-1a02d.firebaseio.com");
 
 class User {
     firstName: string;
@@ -51,7 +53,39 @@ class User {
 
 finalNextButton.onclick = (event: MouseEvent) => {
     let currentUser = new User(firstName.innerText, lastName.innerText, department.innerText, parseInt(courseNumber.innerText), parseInt(latitude.innerText), parseInt(longitude.innerText));
-}
+    
+    ref.on("value", function(snapshot) {
+        console.log(snapshot!.val());
+      }, function (errorObject) {
+        console.log("The read failed: " + errorObject.code);
+      });
+
+    let usersRef = ref.child("user").push();
+    usersRef.set({
+        course_number: courseNumber, depart: department,
+        first_name: firstName, last_name: lastName, lat: latitude, long: longitude
+      }, function(error) {
+        if (error) {
+          // The write failed...
+        } else {
+          // Data saved successfully!
+        }
+      });
+    
+      let myUserId = firebase.auth().currentUser!.uid;
+      let sortedDepartments = firebase.database().ref("user/" + myUserId).equalTo("depart");
+      let sortedClasses = sortedDepartments.equalTo("course_number");
+
+      ref.on("child_added", function(snapshot, prevChildKey) {
+        var newPost = snapshot!.val();
+        console.log("First Name: " + newPost.first_name);
+        console.log("Last Name: " + newPost.last_name);
+        console.log("Previous Post ID: " + prevChildKey);
+      });
+};
+
+
+
 
 let getDistance = (lat1: number, lat2: number, lng1: number, lng2: number): number => {
     let latDiff : number = Math.abs(lat1 - lat2);
