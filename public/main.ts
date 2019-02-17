@@ -1,11 +1,11 @@
-var firstName = document.getElementById("fname-input") as HTMLElement;
-var lastName = document.getElementById("lname-input") as HTMLElement;
-var department = document.getElementById("dept") as HTMLElement;
-var courseNumber = document.getElementById("course-num") as HTMLInputElement;
-var latitude = document.getElementById("latitude") as HTMLElement;
-var longitude = document.getElementById("longitude") as HTMLElement;
-var finalNextButton = document.getElementById("user-button") as HTMLElement;
-
+let firstName = <HTMLInputElement>document.getElementById("fname-input") as HTMLInputElement;
+let lastName = document.getElementById("lname-input") as HTMLInputElement;
+let department = document.getElementById("dept") as HTMLInputElement;
+let courseNumber = document.getElementById("course-num") as HTMLInputElement;
+let latitude = document.getElementById("latitude") as HTMLInputElement;
+let longitude = document.getElementById("longitude") as HTMLInputElement;
+let finalNextButton = document.getElementById("user-button") as HTMLElement;
+let firstButton = document.getElementById("submit-name") as HTMLElement;
 
 class User {
     firstName: string;
@@ -25,6 +25,13 @@ class User {
     }
 }
 
-finalNextButton.onclick = (event: MouseEvent) => {
-    let currentUser = new User(firstName.innerText, lastName.innerText, department.innerText, parseInt(courseNumber.innerText), parseInt(latitude.innerText), parseInt(longitude.innerText));
-}
+
+firstButton.onclick = (event: MouseEvent) => {
+    console.log(firstName.value);
+    alert(firstName.value);
+    let currentUser = new User(firstName.value, lastName.value, department.value, parseFloat(courseNumber.value), parseInt(latitude.value), parseInt(longitude.value));
+    
+};
+
+
+
