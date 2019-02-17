@@ -1,0 +1,75 @@
+[debug] [2019-02-16T23:20:13.815Z] ----------------------------------------------------------------------
+[debug] [2019-02-16T23:20:13.817Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-02-16T23:20:13.817Z] CLI Version:   6.3.1
+[debug] [2019-02-16T23:20:13.817Z] Platform:      darwin
+[debug] [2019-02-16T23:20:13.817Z] Node Version:  v8.11.4
+[debug] [2019-02-16T23:20:13.818Z] Time:          Sat Feb 16 2019 18:20:13 GMT-0500 (EST)
+[debug] [2019-02-16T23:20:13.818Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-16T23:20:13.831Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-16T23:20:13.832Z] > authorizing via signed-in user
+[debug] [2019-02-16T23:20:13.833Z] [iam] checking project learntogether-1a02d for permissions ["firebase.projects.get"]
+[debug] [2019-02-16T23:20:13.835Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/learntogether-1a02d:testIamPermissions  
+
+[debug] [2019-02-16T23:20:14.086Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-16T23:20:14.088Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/learntogether-1a02d  
+ 
+[debug] [2019-02-16T23:20:14.291Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/meganzhang/Desktop/pearl-hacks/LearnTogether'...
+[info] 
+[debug] [2019-02-16T23:20:14.295Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/984765198855/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-16T23:20:14.557Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-02-16T23:23:43.458Z] ----------------------------------------------------------------------
+[debug] [2019-02-16T23:23:43.460Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-02-16T23:23:43.460Z] CLI Version:   6.3.1
+[debug] [2019-02-16T23:23:43.460Z] Platform:      darwin
+[debug] [2019-02-16T23:23:43.460Z] Node Version:  v8.11.4
+[debug] [2019-02-16T23:23:43.461Z] Time:          Sat Feb 16 2019 18:23:43 GMT-0500 (EST)
+[debug] [2019-02-16T23:23:43.461Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-16T23:23:43.471Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-16T23:23:43.471Z] > authorizing via signed-in user
+[debug] [2019-02-16T23:23:43.472Z] [iam] checking project learntogether-1a02d for permissions ["firebase.projects.get"]
+[debug] [2019-02-16T23:23:43.473Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/learntogether-1a02d:testIamPermissions  
+
+[debug] [2019-02-16T23:23:43.880Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-16T23:23:43.883Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/learntogether-1a02d  
+ 
+[debug] [2019-02-16T23:23:44.075Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/meganzhang/Desktop/pearl-hacks/LearnTogether'...
+[info] 
+[debug] [2019-02-16T23:23:44.078Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/984765198855/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-16T23:23:44.309Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-02-16T23:27:02.470Z] ----------------------------------------------------------------------
+[debug] [2019-02-16T23:27:02.473Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-02-16T23:27:02.474Z] CLI Version:   6.3.1
+[debug] [2019-02-16T23:27:02.474Z] Platform:      darwin
+[debug] [2019-02-16T23:27:02.474Z] Node Version:  v8.11.4
+[debug] [2019-02-16T23:27:02.479Z] Time:          Sat Feb 16 2019 18:27:02 GMT-0500 (EST)
+[debug] [2019-02-16T23:27:02.479Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-16T23:27:02.506Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-16T23:27:02.507Z] > authorizing via signed-in user
+[debug] [2019-02-16T23:27:02.508Z] [iam] checking project learntogether-1a02d for permissions ["firebase.projects.get"]
+[debug] [2019-02-16T23:27:02.511Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/learntogether-1a02d:testIamPermissions  
+
+[debug] [2019-02-16T23:27:02.775Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-16T23:27:02.777Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/learntogether-1a02d  
+ 
+[debug] [2019-02-16T23:27:03.002Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/meganzhang/Desktop/pearl-hacks/LearnTogether'...
+[info] 
+[debug] [2019-02-16T23:27:03.007Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/984765198855/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-16T23:27:03.252Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
