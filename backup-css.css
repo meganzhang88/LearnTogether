@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-image: -webkit-radial-gradient(0.333);
+    padding-top: 20px;
+}
+
+#course-det {
+    padding-top: 0.5px;
+    padding-bottom: 0px;
+}
+
+#back-button {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+}
+
+#submit-button {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+}
+
+#user-button {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#map {
+    border: 10px;
+}
+
+input {
+    padding: 5px;
+    font-size: 12px;
+    width: 150px;
+    height: 20px;
+ }
+ 
+ button {
+    height: 30px;
+    width: 70px;
+    background: none; /* This removes the default background */
+    color: black;
+    border: 3px solid black;
+    border-radius: 50px; /* This gives our button rounded edges */
+    font-size: 12px;
+    cursor: pointer;
+ }
+ form {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
