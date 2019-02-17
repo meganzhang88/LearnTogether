@@ -37,6 +37,11 @@ p {
     height: 10%;
 }
 
+.container-2 {
+    display: inline-flex;
+
+}
+
 .backbutton {
     display: flex;
     justify-content: center;
