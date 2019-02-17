@@ -20,4 +20,3 @@ var User = /** @class */ (function () {
 finalNextButton.onclick = function (event) {
     var currentUser = new User(firstName.innerText, lastName.innerText, department.innerText, parseInt(courseNumber.innerText), parseInt(latitude.innerText), parseInt(longitude.innerText));
 };
-
