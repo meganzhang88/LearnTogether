@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    border: green 10px;
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -10,27 +11,36 @@ p {
     padding-top: 20px;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0%;
+    height: 10%;
+}
+
+.backbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    height: 100%;
+}
+
 #course-det {
     padding-top: 0.5px;
     padding-bottom: 0px;
 }
 
 #back-button {
-    padding-top: 10px;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    text-align: center;
 }
 
 #submit-button {
-    padding-top: 10px;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    text-align: center;
+
 }
 
 #user-button {
@@ -39,8 +49,7 @@ p {
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
-    display: inline-block;
-    text-align: center;
+
 }
 
 #map {
