@@ -18,6 +18,7 @@
         padding: 0;
       }
     </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
   <body>
     <h1>Your Location</h1>
@@ -53,6 +54,11 @@
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
+<<<<<<< HEAD:public/map.html
+            // document.getElementById('latitude').innerHTML = '<p>'+pos.lat+'</p>'
+            // document.getElementById('longitude').innerHTML = '<p>'+pos.lng+'</p>'
+=======
+>>>>>>> origin/anna:map.html
             infoWindow.setPosition(pos);
             infoWindow.setContent('Location found.');
             infoWindow.open(map);
@@ -78,4 +84,4 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABwl2qpUZaOYOPg6Bspk2gm0qmRn2-kNM&callback=initMap">
     </script>
   </body>
-</html>
+</html></html>
