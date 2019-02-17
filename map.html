@@ -27,6 +27,7 @@
     <div class="button" id="user-button">
         <a href="user-list.html"><button>Next</button></a>
   </div>
+    <div id="latlngString"></div>
     <div id="latitude"></div>
     <div id="longitude"></div>
     <div id="map"></div>
@@ -52,6 +53,7 @@
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
+            document.getElementById('latlngString').innerHTML = '<p>Latitude, Longitude: </p>'
             document.getElementById('latitude').innerHTML = '<p>'+pos.lat+'</p>'
             document.getElementById('longitude').innerHTML = '<p>'+pos.lng+'</p>'
             infoWindow.setPosition(pos);
