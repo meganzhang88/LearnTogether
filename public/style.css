@@ -1,8 +1,26 @@
+.header {
+    text-align: center;
+    border: green 10px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 150px;
+}
+
 h1 {
     text-align: center;
     border: green 10px;
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    display: block;
+    height: 100%;
+}
+
 
 p {
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -24,7 +42,6 @@ p {
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    height: 100%;
 }
 
 #course-det {

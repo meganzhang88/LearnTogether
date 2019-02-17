@@ -1,33 +1,32 @@
 <!DOCTYPE html>
     <html>
-        <head>
+        <head id="vertical-center">
             <meta charset="utf-8">
 
             <title>LearnTogether</title>
-            <h1>LearnTogether</h1>
+            <h1 class="header"> LearnTogether</h1>
+            
 
             <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
         </head>
-        <body>
+        <body id="vertical-center">
             <div class="flex-container">
                 <div>
                     <p>Enter Your Name Below:</p>
                 </div>
                 <div>
-                    <form class="name-form" id="name-form" action="class-form.html">
-                        <input class="firstname-input" type="text" id="fname-input" placeholder="First Name" required>
+                    <form id="name-form" action="class-form.html" onsubmit="return saveName()">
+                        <input class="firstname-input" type="text" id="fname-input" placeholder="First Name"  required>
                         <input class="lastname-input" type="text" id="lname-input" placeholder="Last Name" required>
                   
                        <div class="next-button">
-                            <button type="submit" class="name-button" id="submit-name">Next ></button>
+                            <button onclick="saveName()" type="submit" value="submit" class="name-button" id="submit-name">Next ></button>
                        </div>
                     </form>
                 </div>
             </div>
             
-            
-            
-            <script src="main.ts"></script>
+            <script src="main.js"></script>
         </body>
     </html>
