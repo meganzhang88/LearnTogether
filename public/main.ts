@@ -56,7 +56,7 @@ finalNextButton.onclick = (event: MouseEvent) => {
     
     ref.on("value", function(snapshot) {
         console.log(snapshot!.val());
-      }, function (errorObject) {
+      }, function (errorObject: { code: string; }) {
         console.log("The read failed: " + errorObject.code);
       });
 
@@ -92,4 +92,3 @@ let getDistance = (lat1: number, lat2: number, lng1: number, lng2: number): numb
     let lngDiff : number = Math.abs(lng1 - lng2);
     return Math.sqrt(latDiff + lngDiff);
 }
-
