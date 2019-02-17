@@ -19,7 +19,5 @@ var User = /** @class */ (function () {
     return User;
 }());
 firstButton.onclick = function (event) {
-    console.log(firstName.value);
-    alert(firstName.value);
     var currentUser = new User(firstName.value, lastName.value, department.value, parseFloat(courseNumber.value), parseInt(latitude.value), parseInt(longitude.value));
 };
