@@ -27,8 +27,6 @@ class User {
 
 
 firstButton.onclick = (event: MouseEvent) => {
-    console.log(firstName.value);
-    alert(firstName.value);
     let currentUser = new User(firstName.value, lastName.value, department.value, parseFloat(courseNumber.value), parseInt(latitude.value), parseInt(longitude.value));
     
 };
