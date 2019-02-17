@@ -31,6 +31,7 @@ var latitude = document.getElementById("latitude");
 var longitude = document.getElementById("longitude");
 var finalNextButton = document.getElementById("user-button");
 var database = firebase.database();
+var ref = database.ref("https://learntogether-1a02d.firebaseio.com");
 var User = /** @class */ (function () {
     function User(firstName, lastName, department, courseNumber, latitude, longitude) {
         this.firstName = firstName;
@@ -45,8 +46,31 @@ var User = /** @class */ (function () {
 }());
 finalNextButton.onclick = function (event) {
     var currentUser = new User(firstName.innerText, lastName.innerText, department.innerText, parseInt(courseNumber.innerText), parseInt(latitude.innerText), parseInt(longitude.innerText));
-    firebase.database().ref("user/" + currentUser).set({ courseNumber: firstName,
-        department: department, firstName: firstName, lastName: lastName, latitude: latitude, longitude: longitude
+    ref.on("value", function (snapshot) {
+        console.log(snapshot.val());
+    }, function (errorObject) {
+        console.log("The read failed: " + errorObject.code);
+    });
+    var usersRef = ref.child("user").push();
+    usersRef.set({
+        course_number: courseNumber, depart: department,
+        first_name: firstName, last_name: lastName, lat: latitude, long: longitude
+    }, function (error) {
+        if (error) {
+            // The write failed...
+        }
+        else {
+            // Data saved successfully!
+        }
+    });
+    var myUserId = firebase.auth().currentUser.uid;
+    var sortedDepartments = firebase.database().ref("user/" + myUserId).equalTo("depart");
+    var sortedClasses = sortedDepartments.equalTo("course_number");
+    ref.on("child_added", function (snapshot, prevChildKey) {
+        var newPost = snapshot.val();
+        console.log("First Name: " + newPost.first_name);
+        console.log("Last Name: " + newPost.last_name);
+        console.log("Previous Post ID: " + prevChildKey);
     });
 };
 var getDistance = function (lat1, lat2, lng1, lng2) {
